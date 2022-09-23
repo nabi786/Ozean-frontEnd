@@ -10,7 +10,7 @@ import From from '../components/form';
 
 
 
-function Signup() {
+function resetPass() {
     return (
         <>
             <div className='signuPage'>
@@ -20,16 +20,14 @@ function Signup() {
 
                     <div className='logoBoxFormPage'> <img src={Logo} /> </div>
 
-                    <div className='formBox'>
+                    <div className='formBox' style={{width:"70%"}}>
 
-                        <h3>Welcome To Ozean</h3>
-                        <p>
-                            Start your 8 days free triel. No any card required.
-                        </p>
+                        <h3>Reset Password</h3>
 
                         <From 
-                            type='signup'
+                            type='resetPass'
                         />
+
                     </div>
                 </div>
                 <div className='box box2'>
@@ -43,4 +41,4 @@ function Signup() {
 
 
 
-export default Signup
+export default resetPass

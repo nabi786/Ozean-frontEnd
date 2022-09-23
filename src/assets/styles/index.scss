@@ -13,6 +13,11 @@
 }
 
 
+body{
+    background-color: $body-color2;
+    font-family: $font-family2;
+}
+
 
 .formSignup{
     p{
@@ -94,6 +99,7 @@
     background-color: #030A1D;
     display: flex;
     justify-content: space-between;
+  
 
     .box{
         width: 50%;
@@ -185,4 +191,222 @@
 
 
 
+.logoBox{
 
+    img{
+        width: 100%;
+    }
+}
+
+.sideBarBox{
+    padding: 20px 25px;
+    border-radius: 15px;
+    color: white;
+    background-color: $boxes-Color;
+    margin-top: 20px;
+
+    .sideBarIcon{
+        margin-right: 15px;
+    }
+}
+
+
+.accordianTitle{
+    color: $font-color2;
+    font-family: $font-family2;
+}
+
+
+
+
+.headerTitle{
+    font-family: $font-family2;
+    font-weight: 500;
+    text-transform: capitalize;
+    font-size:  20px !important;
+}
+
+
+
+
+
+
+.headerSearch{
+    position: relative;
+    margin-right: 10px;
+    width: 300px;
+
+    input{
+        width: 100%;
+        height: 100%;
+
+        border: none;
+        background-color: #202425;
+        border-radius: 50px;
+        color: white;
+        font-family: $font-family2;
+        padding: 15px 17px;
+        font-size: 14px;
+        &::placeholder{
+            color: #827d9d;
+        }
+
+        &:focus{
+            outline: none;
+        }
+    }
+
+}
+
+
+
+
+.headerIcon{
+    width: 50px;
+    height: 50px;
+    background-color: #202425;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 10px 5px 0px rgba($color: #00A2FD, $alpha: 15%);
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+.rightSideBarBox{
+    background-color: #10151C;
+    padding: 20px;
+    border-radius: 15px;
+    color: white;
+    margin-top: 30px;
+    font-family: $font-family2;
+}
+
+
+
+
+.topCreateBoxItem{
+    border-bottom: 1px solid gray;
+    padding: 10px 0px;
+}
+
+
+
+
+.shoppingCard{
+    background-image: url('../imgs/Bg_2.png');
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+
+.mainBody{
+    margin-top: 70px;
+    margin-right: 25px;
+}
+
+
+.nftCard{
+    background-color: $boxes-Color;
+    width: 300px;
+    border-radius: 16px;
+
+
+    .nftCardContent{
+        padding: 12px;
+        color: white;
+        font-family: $font-family2;
+        padding: 25px 15px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Responsive for all Devices
+@media only screen and (max-width:1024px){
+            .signuPage{
+                flex-direction: column;
+
+
+                .box{
+                    height: auto !important;
+                    padding: 50px 12px;
+                }
+                .box1{
+                    width: 100%;
+
+
+                   
+                }
+                .box2{
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    display: none;
+
+                    img{
+                        position: relative;
+                        top: auto;
+                        left: auto;
+                        width: 100%;
+                        transform: none;
+                       
+                    }
+                }
+            }
+}   
+
+
+
+
+
+@media only screen and (max-width:767px){
+        .signuPage{
+
+
+            .box{
+                padding: 80px 12px;
+
+
+                .logoBoxFormPage{
+                    top: 20px;
+                    left: 20px;
+                }
+            }
+
+        }
+}

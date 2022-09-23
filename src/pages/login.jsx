@@ -27,7 +27,9 @@ function Login() {
                             Start your 8 days free triel. No any card required.
                         </p>
 
-                        <From/>
+                        <From
+                            type = 'login'
+                        />
                     </div>
                 </div>
                 <div className='box box2'>
