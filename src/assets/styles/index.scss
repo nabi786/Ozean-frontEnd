@@ -1,26 +1,24 @@
-
-
 // importing other Scss files
 
 
 
 @import './variables.scss';
 
-*{
+* {
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
 }
 
 
-body{
+body {
     background-color: $body-color2;
     font-family: $font-family2;
 }
 
 
-.formSignup{
-    p{
+.formSignup {
+    p {
         font-family: $font-family2;
         font-weight: 300;
         font-size: 14px;
@@ -30,18 +28,20 @@ body{
 
 
 
-.formDiv{
+.formDiv {
     display: flex;
     flex-direction: column;
     margin: 15px 0px;
-    
-    label{
-        color: $font-color3 !important;
+
+    label {
+        color: $font-color3  !important;
         font-weight: 400;
         margin-bottom: 10px
-    };
+    }
 
-    input{
+    ;
+
+    input {
         border-radius: 50px;
         border: 1px solid $font-color2;
         padding: 10px 20px;
@@ -49,21 +49,22 @@ body{
         background-color: #010613;
         color: $front-color;
         font-family: $font-color2;
-        
-        &::placeholder{
+
+        &::placeholder {
             color: $font-color2;
             font-weight: 300;
             font-family: $font-family2;
         }
-        &:focus{
+
+        &:focus {
             outline: none;
         }
-        
+
     }
 
 
 
-    button{
+    button {
         text-transform: capitalize;
         font-family: $font-family2;
         font-style: normal;
@@ -71,19 +72,21 @@ body{
         border-radius: 50px;
     }
 
-    .btn1{
+    .btn1 {
         background-color: $font-color3;
         color: $front-color;
         border: none;
     }
-    .btn2{
+
+    .btn2 {
         background-color: #010613;
         border: 1px solid $font-color3;
         color: $font-color3;
         transition: 0.3s;
-        &:hover{
+
+        &:hover {
             background-color: $font-color3;
-            color:white;
+            color: white;
         }
     }
 }
@@ -93,15 +96,15 @@ body{
 
 
 // signup page
-.signuPage{
+.signuPage {
     width: 100%;
     height: 100vh;
     background-color: #030A1D;
     display: flex;
     justify-content: space-between;
-  
 
-    .box{
+
+    .box {
         width: 50%;
         display: flex;
         justify-content: center;
@@ -110,15 +113,17 @@ body{
         height: 100%;
         position: relative;
         color: $front-color
-    };
+    }
+
+    ;
 
 
 
-    .box1{
+    .box1 {
         background-color: #010613;
         position: relative;
-        
-        .logoBoxFormPage{
+
+        .logoBoxFormPage {
             width: 100px;
             color: white;
             display: flex;
@@ -128,39 +133,42 @@ body{
             left: 30px;
 
 
-            img{
+            img {
                 width: 100%;
             }
         }
-        p{
+
+        p {
             color: $font-color2
         }
-    
 
-        .backgroundImg{
+
+        .backgroundImg {
             position: absolute;
             bottom: 0%;
             left: 0%;
-            
+
         }
-        
-
-        
-    };
 
 
 
+    }
+
+    ;
 
 
-    .box2{
+
+
+
+    .box2 {
         background-color: #030a1d;
         position: relative;
-        
-        img{
+
+        img {
             position: absolute;
             top: 50%;
             left: 50%;
-            transform: translate(-50%,-50%);
+            transform: translate(-50%, -50%);
             width: 90%;
         }
     }
@@ -171,13 +179,15 @@ body{
 
 
 
-.formBox{
+.formBox {
     z-index: 11;
-    h3{
+
+    h3 {
         font-weight: 400;
         font-family: $font-family2;
     }
-    p{
+
+    p {
         font-family: $font-family2;
         font-style: normal;
         font-weight: 300;
@@ -191,27 +201,27 @@ body{
 
 
 
-.logoBox{
+.logoBox {
 
-    img{
+    img {
         width: 100%;
     }
 }
 
-.sideBarBox{
+.sideBarBox {
     padding: 20px 25px;
     border-radius: 15px;
     color: white;
     background-color: $boxes-Color;
     margin-top: 20px;
 
-    .sideBarIcon{
+    .sideBarIcon {
         margin-right: 15px;
     }
 }
 
 
-.accordianTitle{
+.accordianTitle {
     color: $font-color2;
     font-family: $font-family2;
 }
@@ -219,11 +229,11 @@ body{
 
 
 
-.headerTitle{
+.headerTitle {
     font-family: $font-family2;
     font-weight: 500;
     text-transform: capitalize;
-    font-size:  20px !important;
+    font-size: 20px !important;
 }
 
 
@@ -231,12 +241,12 @@ body{
 
 
 
-.headerSearch{
+.headerSearch {
     position: relative;
     margin-right: 10px;
     width: 300px;
 
-    input{
+    input {
         width: 100%;
         height: 100%;
 
@@ -247,11 +257,12 @@ body{
         font-family: $font-family2;
         padding: 15px 17px;
         font-size: 14px;
-        &::placeholder{
+
+        &::placeholder {
             color: #827d9d;
         }
 
-        &:focus{
+        &:focus {
             outline: none;
         }
     }
@@ -261,7 +272,7 @@ body{
 
 
 
-.headerIcon{
+.headerIcon {
     width: 50px;
     height: 50px;
     background-color: #202425;
@@ -280,7 +291,7 @@ body{
 
 
 
-.rightSideBarBox{
+.rightSideBarBox {
     background-color: #10151C;
     padding: 20px;
     border-radius: 15px;
@@ -292,7 +303,7 @@ body{
 
 
 
-.topCreateBoxItem{
+.topCreateBoxItem {
     border-bottom: 1px solid gray;
     padding: 10px 0px;
 }
@@ -300,32 +311,145 @@ body{
 
 
 
-.shoppingCard{
+.shoppingCard {
     background-image: url('../imgs/Bg_2.png');
     display: flex;
     flex-direction: column;
-    
+
 }
 
 
 
-.mainBody{
+.mainBody {
     margin-top: 70px;
     margin-right: 25px;
 }
 
 
-.nftCard{
+.nftCard {
     background-color: $boxes-Color;
-    width: 300px;
+    width: 100%;
     border-radius: 16px;
 
-
-    .nftCardContent{
+    .nftCardContent {
         padding: 12px;
         color: white;
         font-family: $font-family2;
         padding: 25px 15px;
+    }
+}
+
+
+
+
+
+.mainBodySection {
+    max-width: 2000px;
+    min-width: auto;
+    margin: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.responsieMenuBtn {
+    display: none;
+}
+
+
+.css-12i7wg6-MuiPaper-root-MuiDrawer-paper {
+    position: relative !important;
+    background-color: black !important;
+}
+
+
+
+.css-12i7wg6-MuiPaper-root-MuiDrawer-paper {
+    background-color: $body-color2  !important;
+}
+
+
+
+
+
+
+
+.css-18sg6k4-MuiPaper-root-MuiDrawer-paper {
+    position: static !important;
+    background-color: $body-color2  !important;
+    padding: 12px !important;
+}
+
+
+.tagsList{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+
+.layouter{
+    max-width: 4000px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+
+
+
+
+.rightSideBarMenuBtn{
+    box-shadow:0px 10px 5px 0px rgb(0 162 253 / 15%)
+}
+
+
+
+
+
+.mainBodyBox{
+    padding-left: 12px;
+}
+
+
+
+
+
+// Hero Card
+.heroCard{
+    background-color: $boxes-Color;
+    margin: 0px 10px;
+    color: white;
+    border-radius: 20px;
+    padding: 15px;
+    font-family: $font-family2;
+
+
+    button{
+        background-color: $font-color3;
+        color: $boxes-Color;
+        &:hover{
+            background-color: $font-color3;
+            color: $boxes-Color;
+        }
+    }
+
+    .heroCardTitle{
+        font-size: 25px;
     }
 }
 
@@ -343,70 +467,163 @@ body{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 // Responsive for all Devices
-@media only screen and (max-width:1024px){
-            .signuPage{
-                flex-direction: column;
+@media only screen and (max-width:1100px){
+    .tags{
+        padding: 5px 5px !important;
+        font-size: 10px !important;
+    }
+}
+@media only screen and (max-width:1024px) {
+
+    .responsieMenuBtn {
+        display: block;
+    }
 
 
-                .box{
-                    height: auto !important;
-                    padding: 50px 12px;
-                }
-                .box1{
-                    width: 100%;
+    .RightSideBar {
+        position: absolute;
+        top: 0px;
+        left: 100%;
+        z-index: 111;
+        transition: 0.3s;
+    }
+
+    .signuPage {
+        flex-direction: column;
 
 
-                   
-                }
-                .box2{
-                    width: 100%;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    display: none;
+        .box {
+            height: auto !important;
+            padding: 50px 12px;
+        }
 
-                    img{
-                        position: relative;
-                        top: auto;
-                        left: auto;
-                        width: 100%;
-                        transform: none;
-                       
-                    }
-                }
+        .box1 {
+            width: 100%;
+
+
+
+        }
+
+        .box2 {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            display: none;
+
+            img {
+                position: relative;
+                top: auto;
+                left: auto;
+                width: 100%;
+                transform: none;
+
             }
-}   
+        }
+    }
+
+    .css-1160xiw-MuiPaper-root-MuiDrawer-paper{
+        background-color: $body-color2  !important;
+        padding: 12px !important;
+    }
+
+    .mainBodyBox{
+        padding: 0px !important;
+        
+    }
+    .mainBodyAndRightSideBar{
+        padding-left: 0px !important;
+        padding: 25px !important;
+    }
+}
 
 
+
+
+
+@media only screen and (max-width:767px) {
+    .signuPage {
+
+
+        .box {
+            padding: 80px 12px;
+
+
+            .logoBoxFormPage {
+                top: 20px;
+                left: 20px;
+            }
+        }
+
+    }
+}
+
+
+
+@media only screen and (max-width:925px){
+    .header{
+       
+        flex-direction: column;
+
+        .headerTitle {
+            width: 100%;
+            justify-content: space-between;
+        }
+
+        .headerSearchAndIcons{
+           
+            width: 100% !important;
+            margin-top: 20px ;
+        }
+
+    }
+}
 
 
 
 @media only screen and (max-width:767px){
-        .signuPage{
+    .tagsList{
+        display: none;
+    }
+    
+}
 
 
-            .box{
-                padding: 80px 12px;
 
 
-                .logoBoxFormPage{
-                    top: 20px;
-                    left: 20px;
-                }
-            }
 
+
+@media only screen and (max-width:600px){
+    .headerSearchAndIconInnerBox{
+        flex-direction: column ;
+        // border: 1px solid white;
+
+        .headerSearch{
+            width: 100%;
         }
+
+        .headerIconBox{
+            margin-top: 20px !important;
+            // border: 1px solid white;
+            width: 50%;
+            justify-content: space-around;
+            margin: 0px;
+
+            .headerProfileBox{
+                margin-right: auto;
+            }
+        }
+
+
+        
+
+    }
+
+    .css-2x207w{
+        margin-left: 0px !important;
+    }
+    .css-t14dqb{
+        margin: 0px;
+    }
 }

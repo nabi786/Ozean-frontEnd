@@ -16,7 +16,7 @@ function Filters() {
         <>
             <Box className='filtersBox'>
 
-                <Typography sx={{ color: "white" }}>
+                <Typography sx={{ color: "white",paddingLeft:"12px"}}>
                     1,548,931 Results
                 </Typography>
 
@@ -26,104 +26,108 @@ function Filters() {
                     display: "flex",
                     alignItems: 'center'
                 }}>
-                    <Typography sx={{
-                        backgroundColor: "#202425",
-                        borderRadius: "50px",
-                        padding: "10px 30px",
-                        color: "white",
-                        fontSize: "12px",
-                        position: "relative",
-                        margin: "10px",
-                      
-                    }}>
 
-                        ETH
-                        <CloseIcon sx={{
-                            position: "absolute",
-                            top: "50%",
-                            right: "0%",
-                            transform: "translate(-50%,-50%)",
-                            fontSize: "14px",
-                         
-                        }} />
-                    </Typography>
+                    <Box className='tagsList'>
 
 
                     <Typography sx={{
-                        backgroundColor: "#202425",
-                        borderRadius: "50px",
-                        padding: "10px 30px",
-                        color: "white",
-                        fontSize: "12px",
-                        position: "relative",
-                        margin: "10px",
-                       
-                    }}>
+                            backgroundColor: "#202425",
+                            borderRadius: "50px",
+                           
+                            color: "white",
+                            fontSize: "12px",
+                            position: "relative",
+                            margin: "10px",
+                            display : "flex",
+                            justifyContent : "space-between",
+                            alignItems : "center",
+                            padding : "5px 8px"
+                         }} className="tags">
 
-                        ETH
-                        <CloseIcon sx={{
-                            position: "absolute",
-                            top: "50%",
-                            right: "0%",
-                            transform: "translate(-50%,-50%)",
-                            fontSize: "14px",
-                            
-                        }} />
-                    </Typography>
-
-
-                    <Typography sx={{
-                        backgroundColor: "#202425",
-                        borderRadius: "50px",
-                        padding: "10px 30px",
-                        color: "white",
-                        fontSize: "12px",
-                        position: "relative",
-                        margin: "10px"
-                    }}>
-
-                        MVC
-                        <CloseIcon sx={{
-                            position: "absolute",
-                            top: "50%",
-                            right: "0%",
-                            transform: "translate(-50%,-50%)",
-                            fontSize: "14px"
-                        }} />
-                    </Typography>
+                            Block chain
+                            <CloseIcon sx={{
+                                fontSize : '10px',
+                                marginLeft : "5px"
+                            }} />
+                        </Typography>
 
 
-                    <Typography sx={{
-                        backgroundColor: "#202425",
-                        borderRadius: "50px",
-                        padding: "10px 30px",
-                        color: "white",
-                        fontSize: "12px",
-                        position: "relative",
-                        margin: "10px"
-                    }}>
+                        <Typography sx={{
+                            backgroundColor: "#202425",
+                            borderRadius: "50px",
+                           
+                            color: "white",
+                            fontSize: "12px",
+                            position: "relative",
+                            margin: "10px",
+                            display : "flex",
+                            justifyContent : "space-between",
+                            alignItems : "center",
+                            padding : "5px 8px"
+                         }} className="tags">
 
-                        Block chain
-                        <CloseIcon sx={{
-                            position: "absolute",
-                            top: "50%",
-                            right: "0%",
-                            transform: "translate(-50%,-50%)",
-                            fontSize: "14px"
-                        }} />
-                    </Typography>
+                            Block chain
+                            <CloseIcon sx={{
+                                fontSize : '10px',
+                                marginLeft : "5px"
+                            }} />
+                        </Typography>
 
 
-                    <Typography sx={{
-                        color: "#00A2FD"
-                    }}>
-                        Clearn all
-                    </Typography>
+                        <Typography sx={{
+                            backgroundColor: "#202425",
+                            borderRadius: "50px",
+                           
+                            color: "white",
+                            fontSize: "12px",
+                            position: "relative",
+                            margin: "10px",
+                            display : "flex",
+                            justifyContent : "space-between",
+                            alignItems : "center",
+                            padding : "5px 8px"
+                         }} className="tags">
 
+                            Block chain
+                            <CloseIcon sx={{
+                                fontSize : '10px',
+                                marginLeft : "5px"
+                            }} />
+                        </Typography>
+
+
+                        <Typography sx={{
+                            backgroundColor: "#202425",
+                            borderRadius: "50px",
+                           
+                            color: "white",
+                            fontSize: "12px",
+                            position: "relative",
+                            margin: "10px",
+                            display : "flex",
+                            justifyContent : "space-between",
+                            alignItems : "center",
+                            padding : "5px 8px"
+                         }} className="tags">
+
+                            Block chain
+                            <CloseIcon sx={{
+                                fontSize : '10px',
+                                marginLeft : "5px"
+                            }} />
+                        </Typography>
+
+
+                        <Typography sx={{
+                            color: "#00A2FD"
+                        }}>
+                            Clearn all
+                        </Typography>
+                    </Box>
 
 
                     <Box sx={{
-                        display : "flex",
+                        display: "flex",
                         marginLeft: "auto"
                     }}>
                         {/* working */}

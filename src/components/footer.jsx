@@ -11,7 +11,9 @@ function Footer(){
                 justifyContent : "center",
                 alignItems : 'center',
                 color: "white",
-                backgroundColor : "#030a1d"
+                backgroundColor : "#030a1d",
+                width:"100%",
+                marginTop : "50px"
             }}>
 
             <Typography>

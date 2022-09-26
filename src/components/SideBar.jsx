@@ -1,6 +1,6 @@
 
 import logo from '../assets/imgs/Ozen Logo 1.png'
-import { Box, Button, Typography } from '@mui/material'
+import { Box, Typography, Drawer, useMediaQuery } from '@mui/material'
 import AddIcon from '@mui/icons-material/Add';
 import Accordian from '../components/Accordian'
 
@@ -14,152 +14,175 @@ import Paper from '../assets/imgs/Paper.png'
 import Dashboard from '../assets/imgs/Dashboard.png'
 import Chart from '../assets/imgs/Chart.png'
 import RectangleImg from '../assets/imgs/Rectangle 10.png'
+import { useContext} from 'react';
+
+// import { MyContext } from '../App'
+
+import MyContext from './ContextAPI';
 
 
 
 // side bar
-function SideBar() {
+function SideBar(prop) {
+
+    // using contenxt APi
+    const contextObject = useContext(MyContext)
+    
+    const matches = useMediaQuery('(max-width:1024px)', { noSsr: true });
+
+    var varientValue = 'permanent';
+    if (matches == true) {
+        varientValue = 'temporary';
+    }
+
+
     return (
         <>
-            <Box
-                sx={{
-                    width: "280px",
-                    padding: "25px 20px",
-                    backgroundColor: 'black',
-                    display: "flex",
-                    justifyContent: 'center',
-                    alignItems: "center"
-                }}>
 
-                <Box sx={{
-                    width: "100%",
-                    // border : "1px solid white"
-                }}>
+            <Drawer open={contextObject.isOpen} onClose={()=> contextObject.newSetOpen(false)} variant={varientValue}>
+                <Box
 
-                    <Box className='logoBox'
-                        sx={
-                            {
-                                width: '150px',
-                                margin: "auto"
+                    sx={{
+                        width: "280px",
+                        padding: "25px 20px",
+                        backgroundColor: 'black',
+                        display: "flex",
+                        justifyContent: 'center',
+                        alignItems: "center"
+                    }}>
+
+                    <Box sx={{
+                        width: "100%",
+                        // border : "1px solid white"
+                    }}>
+
+                        <Box className='logoBox'
+                            sx={
+                                {
+                                    width: '150px',
+                                    margin: "auto"
+                                }
                             }
-                        }
-                    >
-                        <img src={logo} />
-                    </Box>
+                        >
+                            <img src={logo} alt="icon"/>
+                        </Box>
 
-                    <Box
-                        sx={{
-                            marginTop: '50px'
-                        }}>
-
-
-                        {/* items */}
-                        <Box className='sideBarBox'
-
+                        <Box
                             sx={{
-                                display: 'flex',
-                                justifyContent: 'center',
-                                alignItems: 'center'
+                                marginTop: '50px'
                             }}>
 
-                            <AddIcon className='sideBarIcon'
+
+                            {/* items */}
+                            <Box className='sideBarBox'
+
                                 sx={{
-                                    color: 'blue',
-                                    backgroundColor: '#003452',
-                                    padding: "2px",
-                                    borderRadius: '5px',
-                                    width: "30px",
-                                    height: "30px",
-                                    cursor: "pointer",
-                                    fontWeight: "bold"
-                                }} />
+                                    display: 'flex',
+                                    justifyContent: 'center',
+                                    alignItems: 'center'
+                                }}>
 
-                            <Typography sx={{
-                                fontWeight: "500"
-                            }}>
-                                Create NFT
-                            </Typography>
-                        </Box>
+                                <AddIcon className='sideBarIcon'
+                                    sx={{
+                                        color: 'blue',
+                                        backgroundColor: '#003452',
+                                        padding: "2px",
+                                        borderRadius: '5px',
+                                        width: "30px",
+                                        height: "30px",
+                                        cursor: "pointer",
+                                        fontWeight: "bold"
+                                    }} />
 
-
-
-                        {/* items */}
-                        <Box className='sideBarBox'>
-                            <Accordian
-                                title='Marketplace'
-                                icon={Dashboard}
-                            />
-                            <Accordian
-                                title='Stats'
-                                icon={Chart}
-                            />
-                            <Accordian
-                                title='Resource'
-                                icon={Paper}
-                            />
-                        </Box>
-
-                        <Box className='sideBarBox'>
-                            <Accordian
-                                icon={Dashboard}
-                                title="Status" />
-                            <Accordian
-                                icon={Chart}
-                                title="Price" />
-                            <Accordian
-                                icon={UserImg}
-                                title="Collections" />
-                            <Accordian
-                                icon={MoreCircle}
-                                title="Chains" />
-                            <Accordian
-                                icon={Bag}
-                                title="Categories" />
-                            <Accordian
-                                icon={Discount}
-                                title="On Sale" />
-                        </Box>
+                                <Typography sx={{
+                                    fontWeight: "500"
+                                }}>
+                                    Create NFT
+                                </Typography>
+                            </Box>
 
 
 
-                        <Box className='sideBarBox' sx={{
-                            padding: '0px'
-                        }
-                        }>
-                            <img src={RectangleImg} style={{ width: '100%' }} />
+                            {/* items */}
+                            <Box className='sideBarBox'>
+                                <Accordian
+                                    title={"Marketplace"}
+                                    icon={Dashboard}
 
-                            <Box sx={{
-                                padding : "10px 20px",
-                                display : "flex",
-                                justifyContent  :'space-between',
-                                alignItems : "center"
-                            }}>
-                                <Box>
-                                    <Typography sx={{
-                                        fontSize: "12px",
-                                        color: "#827D9D"
-                                    }}>
-                                        Crypto Hero Macro
-                                    </Typography>
-                                    <Typography>
-                                        Crypto Hero Macro
-                                    </Typography>
-                                </Box>
-                                <Box>
-                                    <img src={Discount}/>
+                                />
+                                <Accordian
+                                    title='Stats'
+                                    icon={Chart}
+                                />
+                                <Accordian
+                                    title='Resource'
+                                    icon={Paper}
+                                />
+                            </Box>
+
+                            <Box className='sideBarBox'>
+                                <Accordian
+                                    icon={Dashboard}
+                                    title="Status" />
+                                <Accordian
+                                    icon={Chart}
+                                    title="Price" />
+                                <Accordian
+                                    icon={UserImg}
+                                    title="Collections" />
+                                <Accordian
+                                    icon={MoreCircle}
+                                    title="Chains" />
+                                <Accordian
+                                    icon={Bag}
+                                    title="Categories" />
+                                <Accordian
+                                    icon={Discount}
+                                    title="On Sale" />
+                            </Box>
+
+
+
+                            <Box className='sideBarBox' sx={{
+                                padding: '0px'
+                            }
+                            }>
+                                <img src={RectangleImg} style={{ width: '100%' }} alt="icon" />
+
+                                <Box sx={{
+                                    padding: "10px 20px",
+                                    display: "flex",
+                                    justifyContent: 'space-between',
+                                    alignItems: "center"
+                                }}>
+                                    <Box>
+                                        <Typography sx={{
+                                            fontSize: "12px",
+                                            color: "#827D9D"
+                                        }}>
+                                            Crypto Hero Macro
+                                        </Typography>
+                                        <Typography>
+                                            Crypto Hero Macro
+                                        </Typography>
+                                    </Box>
+                                    <Box>
+                                        <img src={Discount} alt="icon"/>
+                                    </Box>
                                 </Box>
                             </Box>
+
+
                         </Box>
 
-
                     </Box>
-
                 </Box>
-            </Box>
+            </Drawer>
+
         </>
     )
 }
 
 
 
-export default SideBar
+export default SideBar;
