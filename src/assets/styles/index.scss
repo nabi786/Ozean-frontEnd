@@ -331,6 +331,13 @@ body {
     width: 100%;
     border-radius: 16px;
 
+    .nftCardImg{
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0px 20px 31px -12px rgb(253 219 4 / 10%);
+        
+    }
+
     .nftCardContent {
         padding: 12px;
         color: white;
@@ -458,6 +465,169 @@ body {
 
 
 
+.heroSecSideCard{
+
+    // border: 1px solid white;
+    .nftCardContent{
+        // border: 1px solid white;
+        padding: 20px 10px 0px 10px; 
+        
+    }
+}
+
+
+
+.errorPageErr{
+    text-align: center;
+    color: $font-color3;
+    font-size: 15vw;
+    margin: 0px;
+    font-family: $font-family2;
+}
+.errPageTextOne{
+    color: white;
+    font-size: 22px !important;
+    text-align: center;
+    font-family: $font-family2;
+}
+
+.errorPageTextTwo{
+    color: #827D9D;
+    text-align: center;
+    font-size: 14px;
+    margin: 10px 0px 15px 0px !important;
+}
+
+.errorPageButton{
+    background-color: $font-color3 !important;
+    color: $body-color !important;
+    width: 150px;
+    font-weight: 500 !important;
+    font-family: $font-family2 !important;
+    margin: auto !important;
+}
+
+.bakgroundImg{
+    position: absolute;
+    top: 80%;
+    left: 2%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    width: 500px;
+}
+
+
+
+.nftDetialsSec{
+    justify-content: space-between !important;
+    // border: 1px solid white;
+
+    .nftDetialsSecItem{
+        width: 48% !important;
+        overflow:  hidden;
+
+        img{
+            width: 100%;
+        }
+
+        .nftDetialsText{
+            color: $font-color3;
+            font-size: 12px;
+
+            
+
+        }
+
+        button{
+            background-color: $font-color3;
+            border-radius: 50px;
+            font-size: 12px !important;
+            padding: 5px 15px;
+            color: white;
+            margin: 20px 0px;
+            border: 1px solid $font-color3;
+            &:hover{
+                color: $font-color3;
+                background-color: $body-color2;
+                border: 1px solid $font-color3;
+               
+            }
+
+            &:last-child{
+                color: $font-color3;
+                background-color: $body-color2;
+                border: 1px solid $font-color3;
+                margin-left: 10px;
+                &:hover{
+                    background-color: $font-color3;
+                    color: white
+                }
+            }
+        }
+
+    }
+}
+
+
+
+.GraphBox{
+    background-color: $boxes-Color;
+    padding: 12px;
+    border-radius: 10px;
+    margin-top: 20px;
+    color : white;
+    
+    .grpahContent{
+        margin-bottom: 10px;
+
+        button{
+            background-color: $font-color3 !important;
+            color: $body-color !important;
+            border-radius: 50px;
+            text-transform: capitalize;
+            margin: 0px !important;
+            
+            &:hover{
+                background-color: $boxes-Color !important;
+                color: $font-color3 !important;
+            }
+        }
+    }
+
+   
+}
+
+.horizontalAccordian{
+    border: 1px solid $font-color3;
+    border-radius: 10px;
+    margin-top: 30px;
+
+    .css-heg063-MuiTabs-flexContainer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+.moreCollection{
+    margin-top: 40px;
+}
+
+
+
+.fullBody{
+    max-width: 2500px;
+    display: block;
+    margin: auto;
+}
+
+
+
+
+
+
+
 
 
 
@@ -557,6 +727,47 @@ body {
         }
 
     }
+
+    .heroCard{
+        flex-direction: column;
+    }
+    .HeroCardBox1{
+        width: 100%;
+    }
+    .heroSecSideCard {
+        width: 100% !important;
+        margin-top: 20px;
+    }
+
+    .HeroCardBox1{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+
+
+    .nftDetialsSec{
+        flex-direction: column;
+
+        .nftDetialsSecItem {
+            width: 100% !important;
+
+            &:last-child{
+                margin-top: 20px;
+            }
+            
+        }
+    }
+    .css-iblji9{
+        margin-left: 0px !important;
+    }
+    .mainBodyAndRightSideBar{
+        padding: 10px !important;
+    }
+    .horizontalAccordian .css-heg063-MuiTabs-flexContainer{
+        flex-wrap: wrap;
+    }
 }
 
 
@@ -595,6 +806,9 @@ body {
 
 
 @media only screen and (max-width:600px){
+    .rightSideBarMenuBtn{
+        margin: 0px !important;
+    }
     .headerSearchAndIconInnerBox{
         flex-direction: column ;
         // border: 1px solid white;
@@ -625,5 +839,33 @@ body {
     }
     .css-t14dqb{
         margin: 0px;
+    }
+
+
+    .heroSecSideCard{
+        flex-direction: column;
+
+
+        .nftCard {
+            margin-top: 30px;
+            margin-left: 0px !important;
+           
+           
+        }
+        .css-1y6ic72{
+            margin-left: 0px !important;
+        }
+    }
+}
+
+
+@media only screen and (max-width :400px){
+    .horizontalAccordian .css-heg063-MuiTabs-flexContainer{
+        flex-direction: column;
+    }
+
+    .css-19kzrtu{
+        padding: 10px !important;
+        width: 290px !important;
     }
 }

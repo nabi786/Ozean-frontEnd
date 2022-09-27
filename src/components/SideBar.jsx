@@ -16,6 +16,8 @@ import Chart from '../assets/imgs/Chart.png'
 import RectangleImg from '../assets/imgs/Rectangle 10.png'
 import { useContext} from 'react';
 
+import { useNavigate } from 'react-router-dom';
+
 // import { MyContext } from '../App'
 
 import MyContext from './ContextAPI';
@@ -35,6 +37,7 @@ function SideBar(prop) {
         varientValue = 'temporary';
     }
 
+    let navigate = useNavigate()
 
     return (
         <>
@@ -45,7 +48,7 @@ function SideBar(prop) {
                     sx={{
                         width: "280px",
                         padding: "25px 20px",
-                        backgroundColor: 'black',
+                        backgroundColor: '#010613',
                         display: "flex",
                         justifyContent: 'center',
                         alignItems: "center"
@@ -63,8 +66,9 @@ function SideBar(prop) {
                                     margin: "auto"
                                 }
                             }
-                        >
-                            <img src={logo} alt="icon"/>
+                        >   
+
+                            <img src={logo} alt="icon" onClick={()=>navigate('/')} style={{cursor : "pointer"}}/>
                         </Box>
 
                         <Box

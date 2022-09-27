@@ -43,6 +43,7 @@ function RightSideBar() {
                 {/* right side bar */}
                 <Box className="rightSideBar" sx={{
                     width: '250px',
+                    marginLeft : "auto"
                 }}>
 
                     {/*item      */}

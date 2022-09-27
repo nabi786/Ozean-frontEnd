@@ -12,7 +12,7 @@ function NftCard(prop) {
 
             <Box className='nftCard'>
 
-                <Box>
+                <Box className='nftCardImg'>
                     <img src={prop.img} style={{ width: "100%" }} />
                 </Box>
 

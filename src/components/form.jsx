@@ -5,8 +5,9 @@ import { useNavigate } from "react-router-dom"
 
 
 function Form(props) {
-    console.log(props.type)
+
     let navigate = useNavigate();
+    
     return (
         <>
 
